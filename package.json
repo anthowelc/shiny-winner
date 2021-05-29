@@ -15,7 +15,20 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "cypress": "cypress open",
     "eject": "react-scripts eject"
+  },
+  "standard": {
+    "env": [
+      "jest",
+      "mocha"
+    ],
+    "globals": [
+      "cy",
+      "Cypress",
+      "expect",
+      "assert"
+    ]
   },
   "eslintConfig": {
     "extends": [
@@ -34,5 +47,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "cypress": "^7.4.0"
   }
 }
